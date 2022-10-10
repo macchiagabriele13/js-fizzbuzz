@@ -5,34 +5,67 @@
 const listEl = document.querySelector("ul")
 for (let numberList = 1; numberList < 101; numberList++){
     console.log(numberList);
+
     /* Creaiamo un list item utilizzando document.createElement */
 
-    const li = document.createElement("li")
+    const li = document.createElement("li");
     
     /* Appendo al list item la variabile i  */
-    li.append(numberList)
+    li.append(numberList);
+
+    //const li = `<li class="abc">${numberList}</li>`;
 
     /* Appendo il list item all' listEl */
-    listEl.append(li)
+    listEl.append(li);
+
+
+    if (numberList % 15 == 0) {
+        li.innerHTML = ("FizzBuzz")
+        li.className = "FizzBuzz"
+      console.log("FizzBuzz");  
+    } else if (numberList % 3 == 0) {
+        li.innerHTML = ("Fizz")
+        li.className = "Fizz"
+      console.log("Fizz");  
+    } else if (numberList % 5 == 0) {
+        li.innerHTML = ("Buzz")
+        li.className = "Buzz"
+      console.log("Buzz");  
+    } else {
+        li.innerHTML = numberList
+        li.className = "number"
+        console.log(numberList);
+    }
+
+
+
 }
 
 
 /* ma che per i multipli di 3 stampi “Fizz” al posto del numero
 e per i multipli di 5 stampi “Buzz”. */
 
-for (let numberList = 1; numberList < 101; numberList++){
-    if (numberList % 15 == 0) console.log("FizzBuzz");
-    else if (numberList % 3 == 0) console.log("Fizz");
-    else if (numberList % 5 == 0) console.log("Buzz");
-    else console.log(numberList);
-}
+/* for (let numberList = 1; numberList < 101; numberList++){
+
+    if (numberList % 15 == 0) {
+        li.innerHTML = ("")
+      console.log("FizzBuzz");  
+    } else if (numberList % 3 == 0) {
+      console.log("Fizz");  
+    } else if (numberList % 5 == 0) {
+      console.log("Buzz");  
+    } else {
+        console.log(numberList);
+    }
+
+} */
 
 
 /* Per i numeri che sono sia multipli di 3 che di 5 stampi “FizzBuzz”. */
 
 /* for (let numberList = 1; numberList < 101; numberList++){
 
-    if (numberList % 15 == 0); console.log("FizzBuzz");
+    if (numberList % 15 == 0) console.log("FizzBuzz");
 
     else if (numberList % 3 == 0) console.log("Fizz");
 
