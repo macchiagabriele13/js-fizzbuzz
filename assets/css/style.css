@@ -10,3 +10,12 @@ body{
 
 
  
+li{
+    background-color: black;
+    width: 100px;
+    height: 100px;
+}
+
+.col_7{
+    width: calc(100% / 12 * 7);
+}

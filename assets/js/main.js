@@ -22,20 +22,26 @@ for (let numberList = 1; numberList < 101; numberList++){
     if (numberList % 15 == 0) {
         li.innerHTML = ("FizzBuzz")
         li.className = "FizzBuzz"
+        li.style.background = 'red'
       console.log("FizzBuzz");  
     } else if (numberList % 3 == 0) {
         li.innerHTML = ("Fizz")
         li.className = "Fizz"
+        li.style.background = 'lightgreen'
       console.log("Fizz");  
     } else if (numberList % 5 == 0) {
         li.innerHTML = ("Buzz")
         li.className = "Buzz"
+        li.style.background = 'yellow'
       console.log("Buzz");  
     } else {
         li.innerHTML = numberList
         li.className = "number"
+        li.style.background = 'lightblue'
         console.log(numberList);
     }
+
+
 
 
 
