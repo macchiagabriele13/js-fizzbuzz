@@ -19,3 +19,11 @@ li{
 .col_7{
     width: calc(100% / 12 * 7);
 }
+
+
+.box{
+    width: calc((100% / 10) - .25rem);
+    aspect-ratio: 1 / 1;
+    text-align: center;
+    background-color: black;
+}
